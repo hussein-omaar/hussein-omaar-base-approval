@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    Font-size: 16px;
+    background-color: #FFF6F7;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+.container{
+
+    display: flex;
+    min-height: 100vh;
+  
+
+}
+
+.info{
+
+
+    width: 60%;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+
+
+}
+.info .logo{
+
+
+    margin-bottom: 50px ;
+    margin-bottom: 80px;
+    margin-top: 40px;
+    width: 200px;
+    line-height: 1.1;
+}
+
+.info h1{
+
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   font-size: 60px;
+   color: #000000;
+}
+.info h1 span{
+
+    color: #D9B5B5;
+    letter-spacing: 5px;
+ }
+.info p{
+
+    color:  hsl(0, 36%, 70%);
+    font-weight: bold;
+    line-height: 26px;
+    
+ 
+ 
+}
+
+
+.info form{
+
+  
+    position: relative;
+ 
+    
+}
+
+
+
+.info input{
+
+    background-color: transparent;
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 16px;
+    border: 1px solid  hsl(0, 36%, 70%);
+    width: 100%;
+    outline: none;
+ 
+}
+
+
+
+.info button{
+
+
+ background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+ padding: 15px;
+ border: none;
+ border-radius: 50px;
+ width: 80px;
+ cursor: pointer;
+ position: absolute;
+ top: 0;
+ right: 0;
+
+ 
+
+
+
+}
+
+
+
+form .hiden , .error{
+
+
+    display: none;
+}
+
+
+
+
+
+.photo{
+
+    width: 40%;
+  
+}
+
+
+.bg-photo{
+
+    background-image: url(../base-apparel-coming-soon-master/images/hero-desktop.jpg);
+    background-size: cover;
+    background-position: center center;
+
+}
+
+
+.hero-mobile{
+
+    display: none;
+}
+
+@media (max-width: 600px){
+
+
+    .container{
+
+       
+     flex-direction: column;
+     min-height: unset;   
+    
+    
+    }
+    .info .logo{
+
+        margin-bottom: 20px;
+        width: 100px;
+    }
+
+    .container .info{
+
+
+        width: 100vw;
+        height: 50vh;
+      
+    }
+
+    
+    .bg-photo{
+
+    
+        display: none;
+     
+ 
+    
+    }
+
+    .hero-mobile{
+
+       display: block;
+       width:  calc(100% + 80) ;
+       margin-left: -40px;
+       margin-right: -40px;
+
+    }
+
+    form{
+
+
+       margin-right: 25px;
+      padding-bottom: 1rem;
+    }
+    
+
+
+}
